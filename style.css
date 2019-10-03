@@ -1,9 +1,96 @@
 html {
   box-sizing: border-box;
+  background-image: url("./assets/bg.jpg");
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#page-top-head {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-top-head #menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+#icon-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+#menu {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#menu li {
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  background: red;
+  text-align: center;
+}
+
+i {
+  padding: 3px;
+}
+
+.main-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content div > img {
+  /* position: absolute; */
+  top: 150px;
+  right: 500px;
+  width: 600px;
+  height: 250px;
+  border: 4px white solid;
+}
+
+.top-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs {
+  padding: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.blogs section {
+  height: 100%;
+  display: flex;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  flex-direction: column;
+  text-align: left;
+}
+
+.blogs footer {
+  text-align: center;
 }
