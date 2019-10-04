@@ -19,9 +19,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
-  height: 100%;
+  height: 1200px;
   border: 5px black solid;
   flex-wrap: wrap;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 .jumbotron img {
@@ -73,11 +77,14 @@ body {
 .menu {
   display: block;
   color: white;
+  width: 100%;
   border: 3px white solid;
 }
 
 .menu ul {
   display: grid;
+  margin-right: 70px;
+  margin-left: 50px;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
   gap: 10px;
@@ -87,11 +94,12 @@ body {
 .menu li {
   text-align: center;
   background: red;
+  padding: 5px;
 }
 
 .callouts {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
 }
 
 .callouts div {
@@ -105,13 +113,71 @@ body {
 }
 
 .gallery {
+  display: flex;
+  width: 100%;
+  border: 5px orangered solid;
+}
+
+.gallery .column-1 {
+  border: gold 5px solid;
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 20px);
+  grid-template-rows: repeat(2, 100px);
+  grid-row: 1 / span 2;
+  gap: 10px;
+}
+
+.gallery .column-2 {
+  grid-template-columns: 1fr;
+  width: 25%;
+  border: purple 5px solid;
+}
+
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .gallery img {
+  /* display: flex; */
   border: 2px white solid;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.board-gallery {
+  background: white;
+  width: 100%;
+  border: 5px pink solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 5px green solid;
+}
+
+.contact-form fieldset {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border: 5px solid blueviolet;
+}
+
+fieldset input,
+fieldset textarea {
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid yellowgreen;
 }
